@@ -1,9 +1,14 @@
-
+:root {
+    --dark-bg: #141F36;
+    --menu-bg: #B9B2C5;
+    --btn-bg: #57B5AF;
+    --btn-bg-hover: #657EAE;
+    --text-dark: #40514E;
+    --text-light: #ffffff;
+    --section-title: #366994;
+}
 body {
-  color: #40514E;
-
-  margin: 0;
-  text-align: center;
+    color: var(--text-dark);
   font-family: 'Merriweather', serif;
 }
 
@@ -25,9 +30,7 @@ h2 {
 
 
 h3 {
-  color: #11999E;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
+    color: var(--section-title);
 }
 
 hr{
@@ -37,16 +40,16 @@ hr{
     margin:100px auto;
 }
 
-a{
-    color:#11999E;
+a {
+    color:var(--btn-bg);
     font-family:"Montserrat", sans-serif;
     margin:10px 20px;
     text-decoration:none;
     font-weight: bold;
 }
 
-a:hover{
-    color:#EAF6F6;
+a:hover {
+    color:var(--btn-bg-hover);
 }
 
 p{
@@ -67,19 +70,18 @@ p{
 
 
 .top-container {
-  background-color: #E4F9F5;
-  position: relative;
-  padding-top: 100px;
+    background-color: var(--dark-bg);
+    background-image: url('/images/luca-bravo-corrected.jpg');
 }
 
 .middle-container{
     margin: 100px 0 0;
 
 }
-
-.bottom-container{
-    background-color: #66BFBF;
-    padding: 50px 0 20px;
+.bottom-container {
+    background-color: var(--dark-bg);
+    color: var(--text-light);
+    padding: 50px 20px 20px;
     margin-top:50px;
 }
 
@@ -113,15 +115,13 @@ p{
 
 
 .btn {
-  background: #11cdd4;
-  background-image: -webkit-linear-gradient(top, #11cdd4, #11999E);
-  background-image: -moz-linear-gradient(top, #11cdd4, #11999E);
-  background-image: -ms-linear-gradient(top, #11cdd4, #11999E);
-  background-image: -o-linear-gradient(top, #11cdd4, #11999E);
+    background-color: var(--btn-bg);
+    /* TODO: cambiar a gradiente y animar hover
+    background-image: linear-gradient(to bottom, #11cdd4, #11999E); 
   background-image: linear-gradient(to bottom, #11cdd4, #11999E);
-  -webkit-border-radius: 8;
-  -moz-border-radius: 8;
-  border-radius: 8px;
+    background-image: linear-gradient(to bottom, #11cdd4, #11999E); 
+    */
+    border-radius: 8px;
   font-family:"Montserrat", sans-serif;
   color: #ffffff;
   font-size: 20px;
@@ -130,13 +130,8 @@ p{
 }
 
 .btn:hover {
-  background: #30e3cb;
-  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
-  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
-  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
-  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
-  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
-  text-decoration: none;
+    color: #ffffff;
+    background-color: var(--btn-bg-hover);
 }
 
 .copyright{
