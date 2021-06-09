@@ -7,6 +7,9 @@
     --text-light: #ffffff;
     --section-title: #366994;
 }
+html * {
+    transition: all 0.5s;
+}
 body {
     color: var(--text-dark);
   font-family: 'Merriweather', serif;
